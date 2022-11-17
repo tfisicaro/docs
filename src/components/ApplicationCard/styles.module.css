@@ -1,0 +1,14 @@
+.application {
+    height: 100%;
+    margin-bottom: 1rem;
+}
+
+.applicationImage {
+    height: 200px;
+    width: 200px;
+}
+
+.body {
+    min-height: 80px;
+    overflow-y: hidden;
+}

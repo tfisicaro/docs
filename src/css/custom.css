@@ -1,0 +1,193 @@
+/* stylelint-disable docusaurus/copyright-header */
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+    --ifm-color-primary: #0078d4;
+    --ifm-color-primary-dark: #016ec2;
+    --ifm-color-primary-darker: #0568b4;
+    --ifm-color-primary-darkest: #005596;
+    --ifm-color-primary-light: #168fec;
+    --ifm-color-primary-lighter: #3ca2f0;
+    --ifm-color-primary-lightest: #4bb1ff;
+
+    --ifm-code-font-size: 95%;
+    --ifm-code-border-radius: 3px;
+    --ifm-code-background: rgba(27, 98, 168, 0.05);
+    --ifm-blockquote-color: #808080;
+    --ifm-blockquote-color-dark: #cbddea;
+
+    --ifm-code-padding-vertical: 0.1rem;
+    --ifm-code-padding-horizontal: 0.2rem;
+    --ifm-pre-background: rgb(39, 40, 34);
+
+    --ifm-global-radius: 0.5rem;
+    --ifm-code-border-radius: var(--ifm-global-radius);
+    --ifm-pre-border-radius: var(--ifm-code-border-radius);
+    --ifm-alert-border-radius: var(--ifm-global-radius);
+    --ifm-badge-border-radius: var(--ifm-global-radius);
+    --ifm-breadcrumb-border-radius: 1.5rem;
+    --ifm-button-border-radius: calc(var(--ifm-global-radius) * var(--ifm-button-size-multiplier));
+    --ifm-card-border-radius: calc(var(--ifm-global-radius) * 2);
+    --ifm-pagination-border-radius: calc(
+        var(--ifm-global-radius) * var(--ifm-pagination-size-multiplier)
+    );
+    --ifm-pagination-nav-border-radius: var(--ifm-global-radius);
+    --ifm-alert-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+
+    --ifm-alert-color: black;
+
+    --ra-admonition-color: #ecf4f9;
+    --ra-admonition-color-dark: #2a98b9;
+
+    --ra-admonition-color-important: #2a98b9;
+
+    --ra-admonition-color-note: #fdfdfe;
+    --ra-admonition-color-note-dark: #d4d5d8;
+
+    --ra-admonition-color-success: #e6f6e6;
+    --ra-admonition-color-success-dark: #00bf88;
+
+    --ra-admonition-color-caution: #fff8e6;
+    --ra-admonition-color-caution-dark: #f0ad4e;
+
+    --ra-admonition-color-error: #fff2f2;
+    --ra-admonition-color-error-dark: #d9534f;
+
+    --ra-admonition-icon-color: black !important;
+}
+
+html[data-theme='dark'] {
+    --ifm-color-primary: #0062ff;
+    --ifm-color-primary-dark: #1e67dd;
+    --ifm-color-primary-darker: #0071c7;
+    --ifm-color-primary-darkest: #002a85;
+    --ifm-color-primary-light: #165aec;
+    --ifm-color-primary-lighter: #3c7bf0;
+    --ifm-color-primary-lightest: #4b84ff;
+
+    --ra-admonition-color-note: #3b3b3b;
+    --ra-admonition-color-note-dark: #d4d5d8;
+
+    --ra-admonition-color-success: rgba(0, 191, 136, 0.3);
+    --ra-admonition-color-success-dark: rgba(0, 191, 136, 1);
+
+    --ra-admonition-color-caution: rgba(221, 151, 52, 0.3);
+    --ra-admonition-color-caution-dark: rgba(221, 151, 52, 1);
+
+    --ra-admonition-color-error: #d9534f;
+    --ra-admonition-color-error-dark: #910c07;
+
+    --ifm-background-color: #0e0e0e;
+    --ifm-background-surface-color: #1a1a1b;
+    --ifm-code-background: #313131;
+    --ifm-hover-overlay: rgb(36, 36, 36);
+    --ifm-pre-background: #ff0000;
+    --ifm-color-content-secondary: #030303;
+    --ifm-footer-background-color: #0e0e0e;
+    --ifm-color-content-secondary: #696969;
+}
+
+html[data-theme='dark']div[class^='announcementBarContent'] {
+    background-color: var(--ifm-color-primary);
+    color: var(--ifm-font-color-base);
+}
+
+html[data-theme='dark'] div[class^='codeBlockLines'] {
+    background-color: #272729 !important;
+}
+
+html[data-theme='dark'] .searchQueryInput_1TEI {
+    background-color: #2f2f2f !important;
+    color: #fff !important;
+}
+
+.hero-subtle {
+    background-color: #353535;
+}
+
+.docusaurus-highlight-code-line {
+    background-color: rgb(72, 77, 91);
+    display: block;
+    margin: 0 calc(-1 * var(--ifm-pre-padding));
+    padding: 0 var(--ifm-pre-padding);
+}
+
+.navbar {
+    height: 50px;
+}
+
+.navbar__logo {
+    padding: 2px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+
+.admonition {
+    color: var(--ifm-font-base-color);
+    border-radius: var(--ifm-global-radius);
+    border-left: 6px solid var(--ra-admonition-color-dark);
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-top-left-radius: var(--ifm-global-radius);
+    border-bottom-left-radius: var(--ifm-global-radius);
+    box-shadow: var(--ifm-alert-shadow);
+}
+
+.admonition.admonition-info,
+.admonition.admonition-important,
+.admonition.admonition-secondary {
+    --ra-admonition-color: #ecf4f9;
+    background-color: var(--ra-admonition-color);
+}
+
+.admonition.admonition-note {
+    background-color: var(--ra-admonition-color-note);
+    border-left-color: var(--ra-admonition-color-note-dark);
+}
+
+.admonition.admonition-success,
+.admonition.admonition-tip {
+    background-color: var(--ra-admonition-color-success);
+    border-left-color: var(--ra-admonition-color-success-dark);
+}
+
+.admonition.admonition-caution {
+    background-color: var(--ra-admonition-color-caution);
+    border-left-color: var(--ra-admonition-color-caution-dark);
+}
+
+.admonition.admonition-warning,
+.admonition.admonition-danger {
+    background-color: var(--ra-admonition-color-error);
+    border-left-color: var(--ra-admonition-color-error-dark);
+}
+
+.admonition .admonition-icon svg {
+    fill: black;
+    stroke: black;
+}
+
+.admonition-icon svg {
+    width: 1rem;
+    height: 1rem;
+}
+
+.hero__title {
+    background: -webkit-linear-gradient(326deg, #09c6f9 0%, #045de9 74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+header > h2 {
+    background: -webkit-linear-gradient(326deg, #09c6f9 0%, #045de9 74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}

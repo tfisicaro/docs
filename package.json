@@ -1,0 +1,48 @@
+{
+  "name": "@tfisicaro/docs",
+  "version": "2022.11.17",
+  "private": false,
+  "license": "SEE LICENSE IN LICENSE.md",
+  "scripts": {
+    "docusaurus": "docusaurus",
+    "start": "docusaurus start -p 3001",
+    "build": "docusaurus build && cp ./routes.json ./build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy",
+    "serve": "docusaurus serve",
+    "clear": "docusaurus clear",
+    "dev": "yarn start"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.13",
+    "@babel/plugin-proposal-object-rest-spread": "^7.16.5",
+    "@babel/preset-react": "^7.13.13",
+    "@docusaurus/core": "^2.0.0-beta.21",
+    "@docusaurus/plugin-pwa": "^2.0.0-beta.21",
+    "@docusaurus/preset-classic": "^2.0.0-beta.21",
+    "@easyops-cn/docusaurus-search-local": "^0.16.0",
+    "@mdx-js/react": "^1.6.22",
+    "clsx": "^1.1.1",
+    "docusaurus-plugin-auto-sidebars": "^1.0.7",
+    "mermaid": "^8.9.2",
+    "prism-react-renderer": "^1.2.0",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "disqus-react": "^1.1.5"
+  }
+}

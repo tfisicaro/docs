@@ -1,0 +1,16 @@
+{
+  "name": "tfisicaro.dev",
+  "short_name": "tfdev",
+  "theme_color": "#b100d4",
+  "background_color": "#424242",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "img/mstile-150x150.png",
+      "sizes": "100x100",
+      "type": "image/png"
+    }
+  ]
+}
